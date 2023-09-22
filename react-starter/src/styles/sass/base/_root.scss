@@ -43,8 +43,7 @@
   font-family: "jetbrains";
   font-weight: 700;
   font-style: normal;
-  src: url("../assets/fonts/jetbrains/JetBrainsMono-Bold.woff2")
-    format("woff2");
+  src: url("../assets/fonts/jetbrains/JetBrainsMono-Bold.woff2") format("woff2");
 }
 
 :root {
@@ -79,7 +78,7 @@
 // colors
 @each $clr, $shades in $colors {
   @each $key, $value in $shades {
-    .clr-#{$clr}-#{$key} {
+    .bg-#{$clr}-#{$key} {
       background-color: var(--clr-#{$clr}-#{$key});
     }
     .text-#{$clr}-#{$key} {
@@ -140,5 +139,26 @@
   }
   .mr-#{$key} {
     margin-right: #{$value};
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.absolute-element {
+  position: absolute;
+  left: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & li {
+    padding: 0 1rem;
   }
 }
