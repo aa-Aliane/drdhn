@@ -75,6 +75,18 @@ const main = () => {
           générale.
         </p>
       </Section>
+      <Section title={"Al-Jahiz pour les humanités"}>
+        <p>
+          Le projet Al-Jahiz pour les humanités numériques vise à fournir une
+          infrastructure pour soutenir les sciences humaines et sociales arabes
+          en particulier et les sciences arabes en général.
+        </p>
+        <div className="gallery">
+          <img className="gallery__img" src="./src/assets/jahiz.jpg" alt="" />
+          <img className="gallery__img" src="./src/assets/image4.jpg" alt="" />
+          <img className="gallery__img" src="./src/assets/image5.jpg" alt="" />
+        </div>
+      </Section>
     </div>
   );
 };

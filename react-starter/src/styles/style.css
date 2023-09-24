@@ -35,12 +35,12 @@
   src: url("../assets/fonts/jetbrains/JetBrainsMono-Bold.woff2") format("woff2");
 }
 :root {
-  --clr-primary-300: hsl(214deg, 100%, 50%);
-  --clr-primary-500: hsl(214deg, 100%, 34%);
-  --clr-primary-900: hsl(214deg, 30%, 27%);
-  --clr-neutral-100: hsl(0deg, 0%, 100%);
-  --clr-neutral-200: hsl(0deg, 0%, 95%);
-  --clr-neutral-500: hsl(0deg, 0%, 50%);
+  --clr-primary-300: hsl(214, 100%, 50%);
+  --clr-primary-500: hsl(214, 100%, 34%);
+  --clr-primary-900: hsl(214, 30%, 27%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 95%);
+  --clr-neutral-500: hsl(0, 0%, 50%);
   --fs-s: 0.8rem;
   --fs-m: 1rem;
   --fs-l: 1.2rem;
@@ -565,8 +565,8 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -702,6 +702,20 @@ select {
   padding-top: 2rem;
   width: 95%;
   margin: 0 auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery__img:nth-child(1) {
+  grid-column: 1/2;
+}
+.gallery__img:nth-child(2) {
+  grid-column: 2/3;
+}
+.gallery__img:nth-child(3) {
+  grid-column: 3/4;
 }
 
 /*# sourceMappingURL=style.css.map */
